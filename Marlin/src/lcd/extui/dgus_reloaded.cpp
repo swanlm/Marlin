@@ -100,6 +100,10 @@ namespace ExtUI {
     dgus_screen_handler.SetStatusMessage(msg);
   }
 
+  void onHomingStart() {}
+  void onHomingComplete() {}
+  void onPrintFinished() {}
+
   void onFactoryReset() {
     dgus_screen_handler.SettingsReset();
   }
@@ -121,6 +125,8 @@ namespace ExtUI {
   }
 
   #if HAS_MESH
+    void onMeshLevelingStart() {}
+
     void onMeshUpdate(const int8_t xpos, const int8_t ypos, const float zval) {
       dgus_screen_handler.MeshUpdate(xpos, ypos);
     }
@@ -146,6 +152,8 @@ namespace ExtUI {
     }
   #endif
 
+  void onSteppersDisabled() {}
+  void onSteppersEnabled()  {}
 }
 
 #endif // DGUS_LCD_UI_RELOADED
