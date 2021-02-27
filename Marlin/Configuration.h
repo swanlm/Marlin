@@ -2351,6 +2351,11 @@
 //#define DGUS_LCD_UI_HIPRECY
 
 //
+// Alternative DGUS LCD firmware
+//
+//#define DGUS_LCD_UI_RELOADED
+
+//
 // Touch-screen LCD for Malyan M200/M300 printers
 //
 //#define MALYAN_LCD
